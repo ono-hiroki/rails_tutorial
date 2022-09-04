@@ -5,11 +5,9 @@ ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
-# Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.12'
-# Use SCSS for stylesheets
 gem 'sass-rails', '~> 5'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
@@ -44,6 +42,17 @@ end
 
 group :production do
   gem 'pg', '>= 0.18', '< 2.0'
+end
+
+group :test do
+  gem 'capybara',                 '3.28.0'
+  gem 'selenium-webdriver',       '3.142.4'
+  gem 'webdrivers',               '4.1.2'
+  gem 'rails-controller-testing', '1.0.4'
+  gem 'minitest',                 '5.11.3'
+  gem 'minitest-reporters',       '1.3.8'
+  gem 'guard',                    '2.16.2'
+  gem 'guard-minitest',           '2.4.6'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
