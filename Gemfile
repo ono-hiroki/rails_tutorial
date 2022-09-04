@@ -60,3 +60,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 gem 'turbolinks', '5.2.0'
+gem 'slim-rails'
+#　railsでslimを利用するためのgem
+
+gem 'html2slim'
+#　html.erbをhtmle.slimに変換するためのgem
