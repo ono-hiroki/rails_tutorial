@@ -15,7 +15,7 @@ services:
     environment:
       - BUNDLE_PATH=/app/vendor/bundle
     ports:
-      - "3000:3000"
+      - "3001:3000"
     depends_on:
       - db
     stdin_open: true
