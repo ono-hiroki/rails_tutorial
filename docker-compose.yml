@@ -6,6 +6,11 @@ services:
     platform: linux/x86_64
     volumes:
       - postgresql_data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
   web:
     container_name: web
     image: diveintohacking/docker-compose-rails-6:0.0.4
